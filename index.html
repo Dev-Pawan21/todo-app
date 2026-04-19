@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>To-Do App</title>
@@ -10,24 +11,29 @@
       color: white;
       text-align: center;
     }
+
     .container {
       margin-top: 50px;
     }
+
     input {
       padding: 10px;
       width: 200px;
     }
+
     button {
       padding: 10px;
       margin-left: 5px;
       cursor: pointer;
     }
+
     li {
       margin: 10px 0;
       list-style: none;
     }
   </style>
 </head>
+
 <body>
   <div class="container">
     <h1>📝 To-Do List</h1>
@@ -38,7 +44,7 @@
 
   <script>
     let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
-
+    // adding a comment 
     function renderTasks() {
       const list = document.getElementById("taskList");
       list.innerHTML = "";
@@ -70,4 +76,5 @@
     renderTasks();
   </script>
 </body>
+
 </html>
